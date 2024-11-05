@@ -34,14 +34,14 @@
                     <TableAssignment :no="2" :dealer="{ username: 'Ullamco '}"/>
                 </Col>
                 <Col :lg="3" class="pt-3">
-                    <!-- <div class="d-flex align-items-center justify-content-center">
+                    <div class="d-flex align-items-center justify-content-center">
                         <QrcodeVue
                             :size="300"
                             :value="title"
                             class="img-thumbnail rounded img-fluid w-100 p-3"
                             level="H"
                             render-as="svg"/>
-                    </div> -->
+                    </div>
                     <h5 class="fw-bold">Event Leader Board</h5>
                     <LeaderBoard class="shadow-sm"/>
                 </Col>
@@ -56,7 +56,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import moment from 'moment'
-// import QrcodeVue from 'qrcode.vue'
+import QrcodeVue from 'qrcode.vue'
 import Navbar from '../components/Navbar.vue'
 import Container from '../components/Container.vue'
 import Row from '../components/Row.vue'
